@@ -3,9 +3,7 @@ const template = document.createElement('template')
 template.innerHTML = `
   <style>
     .container {
-      position: absolute;
-      top: 10px;
-      right: 10px;
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,7 +20,6 @@ template.innerHTML = `
     .tooltip .tooltip-content {
       position: absolute;
       top: 40px;
-      right: 10px;
       z-index: 1;
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
       visibility: hidden;
@@ -35,6 +32,14 @@ template.innerHTML = `
     }
     .tooltip-content .tip-text {
       margin-bottom: 20px;
+      text-align: center;
+    }
+    .tooltip-content img {
+      display: block;
+      width: 160px;
+      height: 160px;
+      margin: auto;
+      padding: 0;
     }
   </style>
  
