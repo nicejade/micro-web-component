@@ -36,7 +36,7 @@ template.innerHTML = `
       transition: .8s height;
     }
     .tooltip:hover .tooltip-content {
-      height: 220px;
+      height: 200px;
       visibility: visible;
     }
     .triangle {
@@ -50,14 +50,10 @@ template.innerHTML = `
       border: 10px solid transparent;
       border-bottom: 10px solid #fefefe;
     }
-    .tooltip-content .tip-text {
-      margin-bottom: 20px;
-      text-align: center;
-    }
     .tooltip-content img {
       display: block;
-      width: 160px;
-      height: 160px;
+      width: 100%;
+      height: 100%;
       margin: auto;
       padding: 0;
     }
@@ -71,7 +67,6 @@ template.innerHTML = `
     </div>
     <div class="tooltip-content">
       <div class="triangle"></div>
-      <div class="tip-text">使用微信扫一扫小程序码</div>
       <img
         src="https://image.nicelinks.site/nicelinks-miniprogram-code.jpeg?imageView2/1/w/250/h/250/interlace/1/ignore-error/1"
         alt="倾城之链"
