@@ -19,6 +19,23 @@
 
 Web Component 是一种创建**封装的**、**可复用的**、可扩展的、能组合的网页UI (user interface) 组件的标准化方式。Web 开发者们，通过插件或者模块的形式，在网上分享自己的代码，便于其他开发者们复用这些优秀的代码。相对于 [Vue](https://nicelinks.site/post/5b1a221c0526c920d6dfaada)、[React](https://nicelinks.site/post/5b1294b5e93ed2618cfac134)，具有更简单的 API，以及更小的构建尺寸。因此，有开发一个简单微组件（Web Component 编写、Rollup 构建、jsDelivr 承载），用以方便在其他网页中插入，从而推广个人产品：<a href="https://nicelinks.site?utm_source=github-nicelinks">倾城之链</a>。
 
+## 如何使用
+
+引入 js 资源：
+```js
+<script src="https://cdn.jsdelivr.net/gh/nicejade/micro-web-component@2.0/dist/miniapp-code-entry-min.js"></script>
+```
+
+在合适的位置添加组件：
+```html
+<miniapp-code-entry 
+  alt="倾城之链"
+  src="https://image.nicelinks.site/nicelinks-miniprogram-code.jpeg\?imageView2/1/w/250/h/250/interlace/1/ignore-error/1">
+</miniapp-code-entry>
+```
+
+在线示例效果，请参见[静轩之别苑](https://quickapp.lovejade.cn/)。
+
 ## 如何访问[「倾城之链」](https://nicelinks.site?utm_source=github.com)
 
 * **WEB 浏览器**：为便捷用户访问，有为[「倾城之链」](https://nicelinks.site?utm_source=github.com)注入 [Pwa](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/pwa-tutorial.md) 部分功能，您可通过现代浏览器访问 [https://nicelinks.site](https://nicelinks.site?utm_source=github.com) （推荐使用 `Chrome`），可将其“**添加至主屏幕**”，它将为您创建与原生应用类似的桌面图标，以供您下次可便捷且快速打开。
