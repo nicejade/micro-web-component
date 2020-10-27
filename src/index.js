@@ -28,7 +28,6 @@ template.innerHTML = `
       width: 200px;
       height: 0;
       margin-top: 20px;
-      padding: 20px;
       z-index: 1;
       background-color: #fefefe;
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
@@ -37,6 +36,7 @@ template.innerHTML = `
     }
     .tooltip:hover .tooltip-content {
       height: 200px;
+      padding: 20px;
       visibility: visible;
     }
     .triangle {
@@ -50,12 +50,30 @@ template.innerHTML = `
       border: 10px solid transparent;
       border-bottom: 10px solid #fefefe;
     }
-    .tooltip-content img {
-      display: block;
-      width: 100%;
+    @keyframes wrapper-gradient {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    @keyframes img-gradient {
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    .gradient-wrapper {
       height: 100%;
-      margin: auto;
-      padding: 0;
+      display: block;
+      overflow: hidden;
+      animation: wrapper-gradient .8s linear;
+    }
+    .gradient-wrapper > img {
+      animation: img-gradient .8s linear;
     }
   </style>
  
@@ -67,10 +85,12 @@ template.innerHTML = `
     </div>
     <div class="tooltip-content">
       <div class="triangle"></div>
-      <img
-        src="https://image.nicelinks.site/nicelinks-miniprogram-code.jpeg?imageView2/1/w/250/h/250/interlace/1/ignore-error/1"
-        alt="倾城之链"
-      />
+      <div class="gradient-wrapper">
+        <img
+          src="https://image.nicelinks.site/nicelinks-miniprogram-code.jpeg\?imageView2/1/w/250/h/250/interlace/1/ignore-error/1"
+          alt="倾城之链"
+        />
+      </div>
     </div>
   </div>
 `
