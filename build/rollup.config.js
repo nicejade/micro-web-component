@@ -6,7 +6,7 @@ import cjs from 'rollup-plugin-commonjs'
 const version = process.env.VERSION || require('../package.json').version
 const banner =
   '/*!\n' +
-  ` * miniprogram-entry.js v${version}\n` +
+  ` * miniapp-code-entry-min.js v${version}\n` +
   ` * (c) 2020-${new Date().getFullYear()}  nicelinks.site\n` +
   ' */'
 
@@ -14,7 +14,7 @@ export default {
   input: 'src/index.js',
   output: {
     banner,
-    file: 'dist/miniprogram-entry.js',
+    file: 'dist/miniapp-code-entry-min.js',
     format: 'cjs'
   },
   plugins: [

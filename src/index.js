@@ -97,7 +97,7 @@ const getInnerHTML = that => {
 `
 }
 
-class MiniprogramEntry extends HTMLElement {
+class MiniappCodeEntry extends HTMLElement {
   constructor() {
     super()
 
@@ -122,4 +122,4 @@ class MiniprogramEntry extends HTMLElement {
   }
 }
 
-window.customElements.define('miniprogram-entry', MiniprogramEntry)
+window.customElements.define('miniapp-code-entry', MiniappCodeEntry)
