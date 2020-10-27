@@ -1,6 +1,6 @@
 {
   "name": "micro-web-component",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Micro web component used to show miniprogram code.",
   "main": "index.js",
   "scripts": {
