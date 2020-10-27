@@ -17,7 +17,7 @@
 
 ## 目标与哲学
 
-Web Component 是一种创建**封装的**、**可复用的**、可扩展的、能组合的网页UI (user interface) 组件的标准化方式。Web 开发者们，通过插件或者模块的形式，在网上分享自己的代码，便于其他开发者们复用这些优秀的代码。相对于 [Vue](https://nicelinks.site/post/5b1a221c0526c920d6dfaada)、[React](https://nicelinks.site/post/5b1294b5e93ed2618cfac134)，具有更简单的 API，以及更小的构建尺寸。因此，有开发一个简单微组件（Web Component 编写、Rollup 构建、jsDelivr 承载），用以方便在其他网页中插入，从而推广个人产品：<a href="https://nicelinks.site?utm_source=github-nicelinks">倾城之链</a>。
+Web Component 是一种创建**封装的**、**可复用的**、可扩展的、能组合的网页UI (user interface) 组件的标准化方式。Web 开发者们，通过插件或者模块的形式，在网上分享自己的代码，便于其他开发者们复用这些优秀的代码。相对于 [Vue](https://nicelinks.site/post/5b1a221c0526c920d6dfaada)、[React](https://nicelinks.site/post/5b1294b5e93ed2618cfac134)，具有更简单的 API，以及更小的构建尺寸。因此，有开发一个简单微组件（Web Component 编写、Rollup 构建、jsDelivr 承载），用以方便在其他网页中插入，从而推广个人产品：<a href="https://nicelinks.site?utm_source=github.com">倾城之链</a>。
 
 ## 如何使用
 
@@ -35,6 +35,21 @@ Web Component 是一种创建**封装的**、**可复用的**、可扩展的、�
 ```
 
 在线示例效果，请参见[静轩之别苑](https://quickapp.lovejade.cn/)。
+
+## 参与开发
+
+```bash
+git clone https://github.com/nicejade/micro-web-component.git
+cd micro-web-component
+# 安装依赖
+yarn
+
+# 运行代码
+yarn start 
+
+# 查看效果(基于 http 静态 server)
+npx arya-jarvis s
+```
 
 ## 如何访问[「倾城之链」](https://nicelinks.site?utm_source=github.com)
 
