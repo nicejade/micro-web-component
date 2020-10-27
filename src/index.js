@@ -29,6 +29,7 @@ const getInnerHTML = that => {
       width: 200px;
       height: 0;
       margin-top: 20px;
+      padding: 10px;
       z-index: 1;
       background-color: #fefefe;
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
@@ -37,7 +38,6 @@ const getInnerHTML = that => {
     }
     .tooltip:hover .tooltip-content {
       height: 200px;
-      padding: 20px;
       visibility: visible;
     }
     .triangle {
@@ -74,6 +74,7 @@ const getInnerHTML = that => {
       animation: wrapper-gradient .8s linear;
     }
     .gradient-wrapper > img {
+      width: 100%;
       animation: img-gradient .8s linear;
     }
   </style>
