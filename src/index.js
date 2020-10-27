@@ -1,6 +1,7 @@
 const template = document.createElement('template')
 
-template.innerHTML = `
+const getInnerHTML = that => {
+  return `
   <style>
     .container {
       position: relative;
@@ -87,20 +88,37 @@ template.innerHTML = `
       <div class="triangle"></div>
       <div class="gradient-wrapper">
         <img
-          src="https://image.nicelinks.site/nicelinks-miniprogram-code.jpeg\?imageView2/1/w/250/h/250/interlace/1/ignore-error/1"
-          alt="倾城之链"
+          src="${that.src}"
+          alt="${that.alt}"
         />
       </div>
     </div>
   </div>
 `
+}
 
 class MiniprogramEntry extends HTMLElement {
   constructor() {
     super()
 
+    template.innerHTML = getInnerHTML(this)
     this._shadowRoot = this.attachShadow({ mode: 'closed' })
     this._shadowRoot.appendChild(template.content.cloneNode(true))
+  }
+  get src() {
+    return (
+      this.getAttribute('src') ||
+      'https://image.nicelinks.site/nicelinks-miniprogram-code.jpeg?imageView2/1/w/250/h/250/interlace/1/ignore-error/1'
+    )
+  }
+  set src(v) {
+    this.setAttribute('src')
+  }
+  get alt() {
+    return this.getAttribute('alt') || '倾城之链'
+  }
+  set alt(v) {
+    this.setAttribute('alt')
   }
 }
 
